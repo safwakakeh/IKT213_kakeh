@@ -59,7 +59,7 @@ def resize(image_path, scale_factor=2, up_or_down="up"):
     # Leser inn bildet
     image = cv2.imread(image_path)
 
-    # Sjekker at output-mappen finnes, ellers lager den den
+    # Sjekker at output-mappen finnes, ellers lager den 
     os.makedirs("output", exist_ok=True)
 
     # Zoom inn eller ut
@@ -79,7 +79,7 @@ def resize(image_path, scale_factor=2, up_or_down="up"):
 
 
 
-#  Test (du kan kommentere ut de du ikke vil kjøre)
+#  Test
 if __name__ == "__main__":
     sobel_edge_detection("lambo.png")
     canny_edge_detection("lambo.png")
